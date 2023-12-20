@@ -129,8 +129,13 @@ h6 {
 	padding-right:80px;
 	margin:50px auto;
 }
-.banner-text p {
-	margin:40px 0px;
+
+.banner p {
+    position: absolute;
+    top: 65%; /* adjust this value as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color : #ffffff;
 }
 .banner-text ul {
 	list-style: none;
@@ -145,6 +150,13 @@ h6 {
 .banner-text ul li a img {
 	width: 150px;
 	border-radius: 7px;
+}
+
+.partytime {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .prelative {
 	position:relative
