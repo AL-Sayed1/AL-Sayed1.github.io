@@ -173,11 +173,11 @@ h6 {
     padding-top: 9px;
 }
 
-#services-section {
-    background-color: white !important;
-    color: black !important;
-}
 
+#services-section, #services-section * {
+	background-color: white;
+	color: black !important;
+}
 .map {
 	border:0;
 	border-radius: 15px;
