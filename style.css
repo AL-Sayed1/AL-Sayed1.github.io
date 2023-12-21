@@ -173,6 +173,31 @@ h6 {
 .section-padding {
 	padding:80px 0px;
 }
+
+.button {
+	display: inline-block;
+	padding: 8px 18px;
+	margin-top: 9px;
+	font-size: 19px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #800080;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #9370DB;
+  }
+  
+  .button:hover {background-color: #9932CC;}
+  
+  .button:active {
+	background-color: #9400D3;
+	box-shadow: 0 5px #8A2BE2;
+	transform: translateY(4px);
+  }
+
 .sectioner-header {
 	width:69%;
 	margin:0 auto;
