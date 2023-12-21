@@ -23,7 +23,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0" style="color: #fff;">Home</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1" style="color: #fff;">About</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1" style="color: #fff;">Services</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2" style="color: #fff;">Contact</a> </li>
                     </ul>
                 </div>
@@ -100,14 +100,9 @@
     <!-- scrollIt js --> 
     <script src="js/scrollIt.min.js"></script> 
     <script src="js/wow.min.js"></script> 
+    <script src="js/nav.js"></script>
+
     <script>
-        $(document).ready(function() {
-          // Add click event listener to the "Home" link
-          $(".nav-link[data-scroll-nav='0']").on("click", function(e) {
-            e.preventDefault(); // Prevent the default behavior of the link
-            window.location.href = "index.html"; // Redirect to index.html
-          });
-      
           // Initialize smooth scrolling
           $.scrollIt({
             easing: 'swing',

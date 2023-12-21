@@ -54,7 +54,7 @@
 
 <!-------Banner End-------> 
 
-<!-------About End------->
+<!-------About Start------->
 
 <section class="about section-padding prelative" data-scroll-index='1'>
   <div class="container">
@@ -226,6 +226,7 @@
 <!-- scrollIt js --> 
 <script src="js/scrollIt.min.js"></script> 
 <script src="js/wow.min.js"></script> 
+<script src="js/nav.js"></script>
 <script>
 	wow = new WOW();
 	wow.init();
@@ -288,22 +289,6 @@ $(window).on("load",function (){
 	topOffset: -63
 	});
 });
-
-$(document).ready(function() {
-    // Add click event listener to the "CONTACT" link
-    $(".nav-link[data-scroll-nav='2']").on("click", function(e) {
-      e.preventDefault(); // Prevent the default behavior of the link
-      window.location.href = "contact.html"; // Redirect to contact.html
-    });
-  });
-
-$(document).ready(function() {
-    // Add click event listener to the "CONTACT" link
-    $(".nav-link[data-scroll-nav='1']").on("click", function(e) {
-      e.preventDefault(); // Prevent the default behavior of the link
-      window.location.href = "services.html"; // Redirect to services.html
-    });
-  });
 </script>
 </body>
 </html>
