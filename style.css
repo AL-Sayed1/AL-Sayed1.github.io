@@ -159,6 +159,16 @@ h6 {
     transform: translate(-50%, -50%);
 }
 
+.service-image {
+	width: 260px;
+	height: 315px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.service-image:hover {
+	opacity: 0.7;
+}
 .icon-box h6 {
     padding-top: 9px;
 }
