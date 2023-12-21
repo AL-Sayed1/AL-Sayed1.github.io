@@ -163,6 +163,10 @@ h6 {
     padding-top: 9px;
 }
 
+.map {
+	border:0;
+	border-radius: 15px;
+}
 .prelative {
 	position:relative
 }
