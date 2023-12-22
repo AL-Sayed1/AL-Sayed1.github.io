@@ -488,6 +488,7 @@ input {
 	color: white;
 }
 
+
 .choices[data-type*="select-one"] .choices__inner, .choices[data-type*="select-one"]
 .choices__input {
 	background-color: white;
