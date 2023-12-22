@@ -75,7 +75,8 @@
                             <option value="birthday">Birthday</option>
                             <option value="social_event">Social Event</option>
                         </select>
-                        <input type="text" id="datetime" class="form-input w-100" name="datetime" placeholder="select time" required>                        <textarea class="form-input w-100" id="message" placeholder="other notes" name="message"></textarea>
+                        <input type="text" id="datetime" class="form-input w-100" name="datetime" placeholder="select time" required>                        
+                        <textarea class="form-input w-100" id="message" placeholder="Other notes" name="message"></textarea>
                         <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
                         </form>
                     </div>
@@ -149,23 +150,45 @@
         });
     });
     document.getElementById('contact_form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
         var packageSelect = document.getElementById('package');
         var serviceSelect = document.getElementById('service');
+        var isValid = true;
 
         if (packageSelect.value === '') {
             alert('Please choose a package.');
-            event.preventDefault(); // Prevent form submission
+            isValid = false;
         }
 
         if (packageSelect.value !== 'custom' && serviceSelect.value === '') {
             alert('Please choose a service.');
-            event.preventDefault(); // Prevent form submission
+            isValid = false;
+        }
+
+        // If the form is valid, submit it and display a success message
+        if (isValid) {
+            this.submit(); // Manually submit the form
+
+            alert('Submitted successfully. We will be in touch with you soon.');
         }
     });
     flatpickr("#datetime", {
     enableTime: true,
     dateFormat: "Y-m-d H:i",
     minDate: "today",});
+
+    $(document).ready(function() {
+        $('#package').change(function() {
+            if ($(this).val() === 'custom') {
+                $('#message').attr('placeholder', 'Tell us about your party');
+                $('#message').attr('required', true);
+            } else {
+                $('#message').attr('placeholder', 'Other notes');
+                $('#message').removeAttr('required');
+            }
+        });
+    });
 </script>
 
 
