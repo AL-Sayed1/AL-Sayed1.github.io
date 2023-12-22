@@ -13,6 +13,14 @@
         <!-- Font Google -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         </head>
     <body>
         <!-- Navbar -->
@@ -40,7 +48,7 @@
                 <div class="sectioner-header text-center">
                     <h3>Contact us</h3>
                     <span class="line"></span>
-                    <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+                    <p>Seamlessly plan your dream event with Party Time's user-friendly book form. Effortlessly customize your package, confirm details, and secure your date in just a few clicks. Let's celebrate!</p>
                 </div>
                 <div class="section-content">
                     <div class="row">
@@ -54,14 +62,26 @@
                             <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
                             </div>
                         </div>
-                        <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
-                        <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
+                        <select id="package" class="form-input w-100" name="package">
+                            <option value="" disabled selected>Choose package</option>
+                            <option value="gold">Gold</option>
+                            <option value="silver">Silver</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                        <select id="service" class="form-input w-100" name="service">
+                            <option value="" disabled selected>Choose service</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="social_event">Social Event</option>
+                        </select>
+                        <input type="text" id="datetime" class="form-input w-100" name="datetime" placeholder="select time" required>                        <textarea class="form-input w-100" id="message" placeholder="other notes" name="message"></textarea>
                         <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
                         </form>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4">
                         <div>
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.145333664186!2d50.60925467526357!3d26.02880037718513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e4854135c18ea7f%3A0xaf0bf0bb7a3e7ae8!2sNasser%20Vocational%20Training%20Center%20(NVTC)!5e0!3m2!1sen!2sbh!4v1703140633358!5m2!1sen!2sbh" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.1453336641866!2d50.609254675263585!3d26.028800377185124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e4854135c18ea7f%3A0xaf0bf0bb7a3e7ae8!2sNasser%20Vocational%20Training%20Center%20(NVTC)!5e0!3m2!1sen!2sbh!4v1703229219143!5m2!1sen!2sbh" width="417" height="417" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         </div>
                         </div>
@@ -81,17 +101,72 @@
     <script src="js/wow.min.js"></script> 
     <script src="js/nav.js"></script>
 
-    <script>
-          // Initialize smooth scrolling
-          $.scrollIt({
-            easing: 'swing',
-            scrollTime: 900,
-            activeClass: 'active',
-            topOffset: -63
-          });
-        ;
-      </script>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+<!-- scrollIt js --> 
+<script src="js/scrollIt.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/nav.js"></script>
+
+<script>
+    // Initialize smooth scrolling
+    $.scrollIt({
+        easing: 'swing',
+        scrollTime: 900,
+        activeClass: 'active',
+        topOffset: -63
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        var packageElement = document.querySelector('#package');
+        var packageChoices = new Choices(packageElement, {
+            removeItemButton: true,
+            searchEnabled: false,
+            itemSelectText: '',
+            placeholder: true,
+            placeholderValue: 'Choose package',
+            shouldSort: false
+        });
+
+        var serviceElement = document.querySelector('#service');
+        var serviceChoices = new Choices(serviceElement, {
+            removeItemButton: true,
+            searchEnabled: false,
+            itemSelectText: '',
+            placeholder: true,
+            placeholderValue: 'Choose service',
+            shouldSort: false
+        });
+
+        packageElement.addEventListener('change', function() {
+            if (this.value === 'custom') {
+                serviceChoices.containerOuter.element.style.display = 'none';
+            } else {
+                serviceChoices.containerOuter.element.style.display = 'block';
+            }
+        });
+    });
+    document.getElementById('contact_form').addEventListener('submit', function(event) {
+        var packageSelect = document.getElementById('package');
+        var serviceSelect = document.getElementById('service');
+
+        if (packageSelect.value === '') {
+            alert('Please choose a package.');
+            event.preventDefault(); // Prevent form submission
+        }
+
+        if (packageSelect.value !== 'custom' && serviceSelect.value === '') {
+            alert('Please choose a service.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+    flatpickr("#datetime", {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    minDate: "today",});
+</script>
 
 
   </body>

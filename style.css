@@ -464,6 +464,40 @@ input {
 	transition: all 0.3s ease-in-out;
 	border:0;
 }
+
+.form-input, #package {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.choices__list--dropdown {
+	width: 100% !important;
+}
+
+.choices__list--dropdown .choices__item {
+	width: 100% !important;
+}
+
+.choices__item--choice.is-highlighted {
+	background-color: #7a60ff !important;
+	color: white;
+}
+
+.choices[data-type*="select-one"] .choices__inner, .choices[data-type*="select-one"]
+.choices__input {
+	background-color: white;
+	color: black;
+}
+
+.choices {
+	margin: 10px 0 !important; /* Adjust as needed */
+}
+
 #contact_form textarea {
 	resize: none;
 	padding: 1rem;
@@ -477,6 +511,8 @@ input {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
+
 .btn-grad {
  padding: .7rem 2rem;
 	display: inline-block;
