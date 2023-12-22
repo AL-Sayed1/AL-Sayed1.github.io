@@ -7,7 +7,7 @@ body {
 	font-size: 14px;
 }
 
-body {
+body, html {
 	overflow-x: hidden;
 }
 
