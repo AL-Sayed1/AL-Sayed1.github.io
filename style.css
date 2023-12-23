@@ -486,6 +486,7 @@ input {
     box-sizing: border-box;
 }
 
+
 input[type="time"]::selection {
 	background: #7a60ff;
 }
@@ -520,7 +521,7 @@ input[type="time"]::selection {
 	height: 150px;
 	background: #fff;
 	border: 0;
-	border-radius: 30px;
+	border-radius: 4px;
 	margin-bottom: 1rem;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
