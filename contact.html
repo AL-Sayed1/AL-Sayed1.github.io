@@ -76,14 +76,19 @@
                             <option value="social_event">Social Event</option>
                         </select>
                         <input type="text" id="datetime" class="form-input w-100" name="datetime" placeholder="select time" required>                        
+                        <select id="location">
+                            <option value="" disabled selected>Choose location</option>
+                            <option value="NVTC">NVTC</option>
+                            <option value="Exhibition World Bahrain">Exhibition World Bahrain</option>
+                            <option value="Karbabad Beach">Karbabad Beach</option>
+                        </select>
                         <textarea class="form-input w-100" id="message" placeholder="Other notes" name="message"></textarea>
                         <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
                         </form>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4">
                         <div>
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.1453336641866!2d50.609254675263585!3d26.028800377185124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e4854135c18ea7f%3A0xaf0bf0bb7a3e7ae8!2sNasser%20Vocational%20Training%20Center%20(NVTC)!5e0!3m2!1sen!2sbh!4v1703229219143!5m2!1sen!2sbh" width="417" height="417" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459243.13370471663!2d50.2579186280861!3d25.94057694322772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e48524e6a47a211%3A0x2e9450e2dbda1046!2sBahrain!5e0!3m2!1sen!2sbh!4v1703325743415!5m2!1sen!2sbh" width="417" height="417" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         </div>
                     </div>
@@ -168,6 +173,15 @@
             placeholderValue: 'Choose service',
             shouldSort: false
         });
+        var locationElement = document.querySelector('#location');
+        var locationChoices = new Choices(locationElement, {
+            removeItemButton: true,
+            searchEnabled: false,
+            itemSelectText: '',
+            placeholder: true,
+            placeholderValue: 'Select Location',
+            shouldSort: false
+        });
 
         packageElement.addEventListener('change', function() {
             if (this.value === 'custom') {
@@ -182,6 +196,7 @@
 
         var packageSelect = document.getElementById('package');
         var serviceSelect = document.getElementById('service');
+        var locationSelect = document.getElementById('location');
         var isValid = true;
 
         if (packageSelect.value === '') {
@@ -193,7 +208,10 @@
             alert('Please choose a service.');
             isValid = false;
         }
-
+        if (locationSelect.value === '') {
+            alert('Please choose a location.');
+            isValid = false;
+        }
         // If the form is valid, submit it and display a success message
         if (isValid) {
             this.submit(); // Manually submit the form
@@ -216,6 +234,23 @@
                 $('#message').removeAttr('required');
             }
         });
+    });
+
+    var locationElement = document.querySelector('#location');
+    var mapIframe = document.querySelector('iframe');
+
+    locationElement.addEventListener('change', function() {
+        var selectedLocation = this.value;
+
+        if (selectedLocation === 'NVTC') {
+            mapIframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.1453336641866!2d50.609254675263585!3d26.028800377185124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e4854135c18ea7f%3A0xaf0bf0bb7a3e7ae8!2sNasser%20Vocational%20Training%20Center%20(NVTC)!5e0!3m2!1sen!2sbh!4v1703326130871!5m2!1sen!2sbh';
+        } else if (selectedLocation === 'Exhibition World Bahrain') {
+            mapIframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.1975110327603!2d50.49485748079561!3d26.027092818362025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e484da763cf624f%3A0x4254dd4bd034dd22!2sExhibition%20World%20Bahrain!5e0!3m2!1sen!2sbh!4v1703325893050!5m2!1sen!2sbh';
+        } else if (selectedLocation === 'Karbabad Beach') {
+            mapIframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.4418216738395!2d50.526459296685196!3d26.241040697289375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49a53904a7ad71%3A0x226b8d9f0d554df2!2sKarbabad%20Beach!5e0!3m2!1sen!2sbh!4v1703325950056!5m2!1sen!2sbh';
+        } else {
+            mapIframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459243.13370471663!2d50.2579186280861!3d25.94057694322772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e48524e6a47a211%3A0x2e9450e2dbda1046!2sBahrain!5e0!3m2!1sen!2sbh!4v1703325743415!5m2!1sen!2sbh';
+        }
     });
 </script>
 
