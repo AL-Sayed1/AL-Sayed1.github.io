@@ -179,7 +179,7 @@ Gulf Air Email Classifier | Sayed Hashim Profile
                 
                 <img src="/fav.png" width="30" height="30"
                     class="d-inline-block align-top">
-                Sayed Hashim
+                 
                 
             </a>
 
@@ -301,7 +301,7 @@ Gulf Air Email Classifier | Sayed Hashim Profile
 <h1 id="introduction">Introduction</h1>
 <p>As a trainee at Gulf Air, I worked on a project to help the airline handle the huge number of customer emails they receive every day. These emails cover all sorts of topics like baggage, bookings, schedule changes, and more. Before, staff had to read and sort each email manually, which took a lot of time and sometimes led to mistakes.</p>
 <h1 id="project-overview">Project Overview</h1>
-<p>To address this challenge, I designed and implemented an AI-powered email classification system. The core of the solution uses natural language processing (NLP) techniques using Python and the Hugging Face Transformers library. For the model architecture, I fine-tuned the DeBERTa transformer, which is known for its strong performance on language understanding tasks. By using DeBERTa&rsquo;s advanced contextual capabilities, the model was able to accurately identify the category of each incoming email based on its content.</p>
+<p>To address this challenge, I designed and implemented an AI-powered email classification system. The core of the solution uses natural language processing (NLP) techniques using Python and the Hugging Face Transformers library. For the model architecture, I fine-tuned the DeBERTa transformer, which is known for its strong performance on language understanding tasks.</p>
 <h1 id="data-collection--augmentation">Data Collection &amp; Augmentation</h1>
 <p>To ensure the integrity and privacy of the data, I did not use historical company emails. Instead, I collected around 30 real, labeled emails and carefully censored any sensitive information. Recognizing that this was a small dataset, I used data augmentation techniques to expand it:</p>
 <ul>
@@ -438,15 +438,13 @@ Gulf Air Email Classifier | Sayed Hashim Profile
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
     }
-
 </script>
+
+
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {
