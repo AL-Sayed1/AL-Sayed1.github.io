@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://al-sayed1.github.io/projects/gulf-air-email-classifier/</loc>
+    <loc>http://localhost:1313/projects/gulf-air-email-classifier/</loc>
     <lastmod>2025-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://al-sayed1.github.io/projects/kidney-stone-detection/</loc>
+    <loc>http://localhost:1313/projects/kidney-stone-detection/</loc>
     <lastmod>2025-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://al-sayed1.github.io/projects/magic-mirror/</loc>
+    <loc>http://localhost:1313/projects/magic-mirror/</loc>
     <lastmod>2025-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://al-sayed1.github.io/projects/notecraft-ai/</loc>
+    <loc>http://localhost:1313/projects/notecraft-ai/</loc>
     <lastmod>2025-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://al-sayed1.github.io/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://al-sayed1.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://al-sayed1.github.io/gallery/</loc>
+    <loc>http://localhost:1313/gallery/</loc>
     <lastmod>2022-06-25T18:35:46+05:30</lastmod>
   </url><url>
-    <loc>https://al-sayed1.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://al-sayed1.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

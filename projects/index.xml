@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Sayed Hashim Profile</title>
-    <link>https://al-sayed1.github.io/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on Sayed Hashim Profile</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://al-sayed1.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gulf Air Email Classifier</title>
-      <link>https://al-sayed1.github.io/projects/gulf-air-email-classifier/</link>
+      <link>http://localhost:1313/projects/gulf-air-email-classifier/</link>
       <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://al-sayed1.github.io/projects/gulf-air-email-classifier/</guid>
+      <guid>http://localhost:1313/projects/gulf-air-email-classifier/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Tools Used:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/python-3670A0?&amp;amp;logo=python&amp;amp;logoColor=ffdd54&#34; alt=&#34;Python&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Machine%20Learning-yellow&#34; alt=&#34;Machine Learning&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/-HuggingFace-FDEE21?&amp;amp;logo=HuggingFace&amp;amp;logoColor=black&#34; alt=&#34;Hugging Face&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/PowerBi-yellow?logo=powerbi&#34; alt=&#34;PowerBi&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Transformers-blueviolet&#34; alt=&#34;Transformers&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Pandas-black?logo=pandas&#34; alt=&#34;Pandas&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Jupyter-F37626.svg?&amp;amp;logo=Jupyter&amp;amp;logoColor=white&#34; alt=&#34;Jupyter Notebook&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;As a trainee at Gulf Air, I worked on a project to help the airline handle the huge number of customer emails they receive every day. These emails cover all sorts of topics like baggage, bookings, schedule changes, and more. Before, staff had to read and sort each email manually, which took a lot of time and sometimes led to mistakes.&lt;/p&gt;&#xA;&lt;h1 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h1&gt;&#xA;&lt;p&gt;To address this challenge, I designed and implemented an AI-powered email classification system. The core of the solution uses natural language processing (NLP) techniques using Python and the Hugging Face Transformers library. For the model architecture, I fine-tuned the DeBERTa transformer, which is known for its strong performance on language understanding tasks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kidney Stone Detection using Deep Learning</title>
-      <link>https://al-sayed1.github.io/projects/kidney-stone-detection/</link>
+      <link>http://localhost:1313/projects/kidney-stone-detection/</link>
       <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://al-sayed1.github.io/projects/kidney-stone-detection/</guid>
+      <guid>http://localhost:1313/projects/kidney-stone-detection/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Tools Used:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/python-3670A0?&amp;amp;logo=python&amp;amp;logoColor=ffdd54&#34; alt=&#34;Python&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&amp;amp;logoColor=white&#34; alt=&#34;TensorFlow&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Keras-D00000?logo=keras&amp;amp;logoColor=white&#34; alt=&#34;Keras&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/pandas-150458?logo=pandas&amp;amp;logoColor=white&#34; alt=&#34;pandas&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&amp;amp;logoColor=white&#34; alt=&#34;Jupyter&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Detecting kidney stones in medical images is really important, but it can take a lot of time and effort for doctors. For my project, I wanted to see if I could use deep learning to help make this process easier and faster. So, I built a model using TensorFlow and Keras that can look at a scan and tell if there are kidney stones or not.&lt;/p&gt;&#xA;&lt;h1 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h1&gt;&#xA;&lt;p&gt;To get started, I found a dataset of real ultrasound images of kidneys. Some of the images had kidney stones and some didn’t. I used pandas to help organize the data and Jupyter Notebook to write and test my code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Magic Mirror</title>
-      <link>https://al-sayed1.github.io/projects/magic-mirror/</link>
+      <link>http://localhost:1313/projects/magic-mirror/</link>
       <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://al-sayed1.github.io/projects/magic-mirror/</guid>
+      <guid>http://localhost:1313/projects/magic-mirror/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Tools Used:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Raspberry%20Pi-C51A4A?logo=raspberrypi&amp;amp;logoColor=white&#34; alt=&#34;Raspberry Pi&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Linux-FCC624?logo=linux&amp;amp;logoColor=black&#34; alt=&#34;Linux&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/python-3670A0?&amp;amp;logo=python&amp;amp;logoColor=ffdd54&#34; alt=&#34;Python&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This is a project that combines both hardware and software, and it was a really fun experience to work on with my team. The Magic Mirror is basically a smart mirror that can show useful school info like the school calendar, the current time, room temperature, and the weather. What makes it even cooler is that it only lights up when someone is nearby, thanks to a motion sensor. It’s perfect for putting in school hallways so students and teachers can quickly check important info as they walk by.&lt;/p&gt;</description>
     </item>
     <item>
       <title>NoteCraft AI</title>
-      <link>https://al-sayed1.github.io/projects/notecraft-ai/</link>
+      <link>http://localhost:1313/projects/notecraft-ai/</link>
       <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://al-sayed1.github.io/projects/notecraft-ai/</guid>
+      <guid>http://localhost:1313/projects/notecraft-ai/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Tools Used:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/python-3670A0?&amp;amp;logo=python&amp;amp;logoColor=ffdd54&#34; alt=&#34;Python&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&amp;amp;logoColor=white&#34; alt=&#34;Streamlit&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/LangChain-blueviolet&#34; alt=&#34;LangChain&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/GPT--4o--mini-black&#34; alt=&#34;GPT-4o-mini&#34;&gt;&#xA;&lt;img src=&#34;https://img.shields.io/badge/GitHub-181717?logo=github&#34; alt=&#34;GitHub&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;NoteCraft&lt;/strong&gt; is a website designed to help students study efficiently by summarizing long documents and lecture videos, and generating questions to evaluate their understanding of the subject. The output notes and flashcards can also be saved as PDFs for easy review and sharing.&lt;/p&gt;&#xA;&lt;p&gt;This project was developed collaboratively as a team effort. My role included:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Project Manager&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Backend Development&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Front-End Design&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Summarizes lengthy documents and lecture videos into concise notes.&lt;/li&gt;&#xA;&lt;li&gt;Generates questions and flashcards to test student comprehension.&lt;/li&gt;&#xA;&lt;li&gt;Allows users to save notes and flashcards as PDF files.&lt;/li&gt;&#xA;&lt;li&gt;Ask AI questions about the lecture and get answers using AI.&lt;/li&gt;&#xA;&lt;li&gt;User-friendly web interface built with Streamlit.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;my-contributions&#34;&gt;My Contributions&lt;/h1&gt;&#xA;&lt;p&gt;As the project manager, I coordinated the team and ensured timely delivery of milestones. I also led the backend development, integrating LangChain and GPT-4o-mini for advanced summarization and question generation. Additionally, I contributed to the front-end design, focusing on usability and accessibility.&lt;/p&gt;</description>
     </item>
   </channel>
