@@ -294,18 +294,37 @@ Magic Mirror | Sayed Hashim Profile
 <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&amp;logoColor=black" alt="Linux">
 <img src="https://img.shields.io/badge/python-3670A0?&amp;logo=python&amp;logoColor=ffdd54" alt="Python"></p>
 <h1 id="introduction">Introduction</h1>
-<p>This is a project that combines both hardware and software, and it was a really fun experience to work on with my team. The Magic Mirror is basically a smart mirror that can show useful school info like the school calendar, the current time, room temperature, and the weather. What makes it even cooler is that it only lights up when someone is nearby, thanks to a motion sensor. It’s perfect for putting in school hallways so students and teachers can quickly check important info as they walk by.</p>
-<h1 id="project-overview">Project Overview</h1>
-<p>We built the Magic Mirror using a Raspberry Pi 4b running Linux, and used the Magic Mirror2 software. The mirror’s display is actually a monitor behind a two-way mirror, so you can see both your reflection and the information on the screen. The motion sensor is connected to the Raspberry Pi, so the mirror only turns on when it detects movement, which helps save energy.</p>
+<p>This is a project that combines both hardware and software, and it was a really fun experience to work on with my team. The Magic Mirror is basically a smart mirror that can show useful information like the school calendar, the current time, room temperature, news and the weather. What makes it even cooler is that it only lights up when someone is nearby, thanks to a motion sensor. It&rsquo;s perfect for putting in school hallways so students and teachers can quickly check important info as they walk by.</p>
+<h1 id="building-the-frame">Building the Frame</h1>
+<p>We started this project with a focus on sustainability by recycling materials we already had. Our first challenge was creating the frame for the mirror. We found an old wooden chair that was no longer being used and decided to repurpose its wood for our project.</p>
+<p>We carefully measured and cut the wood pieces to create a rectangular frame that would perfectly fit our two-way mirror glass. We then painted the wooden frame black.</p>
+<h1 id="display-setup-and-hardware-integration">Display Setup and Hardware Integration</h1>
+<p>We recycled an old computer monitor and carefully disassembled it to fit behind our two-way mirror glass.</p>
+<p>The heart of our system was a Raspberry Pi 4b, which we connected to the recycled display via a HDMI to VGA adapter since the display was so old and didn&rsquo;t have a HDMI port. Setting up the Pi involved installing the Magic Mirror² software on Linux, which is a system specifically designed for our usecase!</p>
+<h1 id="sensor-integration">Sensor Integration</h1>
+<p>To make our mirror truly &ldquo;smart,&rdquo; we integrated these two sensors:</p>
+<p><strong>DHT22 Temperature and Humidity Sensor</strong>: We wired this sensor to the Raspberry Pi&rsquo;s GPIO pins to provide real-time room temperature and humidity readings. This involved writing Python scripts to read the sensor data and integrate it into the Magic Mirror² interface.</p>
+<p><strong>PIR Motion Sensor</strong>: The motion detection was handled by a PIR (Passive Infrared) sensor connected to the Pi&rsquo;s GPIO pins. I programmed it to detect when someone walks by and automatically turn on the display, then turn it off after a set period of inactivity (10 minutes). This energy-saving feature was necessary for a device meant to run continuously in school hallways.</p>
+<h1 id="software-configuration">Software Configuration</h1>
+<p>The software side involved configuring the Magic Mirror² platform and writing custom modules for our specific needs. I set up the system to display:</p>
+<ul>
+<li>School calendar integration</li>
+<li>Current time and date</li>
+<li>Local weather information</li>
+<li>Real-time temperature and humidity from our DHT sensor</li>
+<li>Motion-activated display inactivity time countdown</li>
+</ul>
 <h1 id="my-role">My Role</h1>
 <p>This project was a team effort, and my role included:</p>
 <ul>
-<li><strong>Project Manager</strong> – I helped organize the team and keep us on track.</li>
-<li><strong>Design Blueprint</strong> – I made the design blueprint for how the mirror would look and work.</li>
-<li><strong>Software &amp; Hardware Integration</strong> – I developed the software and made sure it worked smoothly with the hardware.</li>
+<li><strong>Project Manager</strong> – I helped organize the team and keep us on track with deadlines and task assignments.</li>
+<li><strong>Design Blueprint</strong> – I created detailed design blueprints showing the frame dimensions, component placement, and wiring diagrams.</li>
+<li><strong>Software &amp; Hardware Integration</strong> – I developed the Python scripts for sensor integration and configured the Magic Mirror² software to work seamlessly with our hardware setup.</li>
 </ul>
+<h1 id="challenges-and-solutions">Challenges and Solutions</h1>
+<p>One of the biggest challenges was getting the motion sensor calibrated correctly - we had to adjust the sensitivity so it would detect people walking by but not trigger from distant movement. Another challenge was ensuring the recycled monitor fit properly behind the two-way mirror while maintaining good image quality.</p>
 <h1 id="what-i-learned">What I Learned</h1>
-<p>Working on the Magic Mirror taught me a lot about combining hardware and software, and how important teamwork is for bigger projects. It was awesome to see everything come together and actually work in real life!</p>
+<p>Working on the Magic Mirror taught me a lot about combining hardware and software, the importance of recycling and sustainability in engineering projects, and how important teamwork is for complex builds. The hands-on experience with GPIO programming, sensor integration, and Linux system configuration was invaluable. It was incredibly satisfying to see our recycled materials come together into a functional, interactive device that people could actually use!</p>
 
               </article>
             </div>
